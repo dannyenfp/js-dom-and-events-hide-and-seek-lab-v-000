@@ -22,7 +22,12 @@ function deepestChild() {
  // this is the brute force way: return grandNode.children[0].children[0].children[0].children[0];
 
   let nodeToExamine = grandNode;
-  let nodeToExamineLater = grand 
+  let nodeToExamineLater = nodeToExamine.children[0]; 
   
-  
+    while (nodeToExamineLater) {
+      nodeToExamine = nodeToExamineLater;
+      nodeToExamineLater = nodeToExamineLater.children[0];
+    }
+    
+    return nodeToExamineLater;
 }
