@@ -19,5 +19,5 @@ function deepestChild() {
   
   //return grandNode[grandNode.length- 1];
   //return grandNode;
-  return grandNode.children[0].children[0];
+  return grandNode.children[0].children[0].children[0];
 }
