@@ -29,5 +29,5 @@ function deepestChild() {
       nodeToExamineLater = nodeToExamineLater.children[0];
     }
     
-    return nodeToExamineLater;
+    return nodeToExamine;
 }
