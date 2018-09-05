@@ -16,5 +16,7 @@ for (let i = 0; i < rankedLists.length; i++) {
 
 function deepestChild() {
   const grandNode = document.querySelector('#grand-node');
-  
+    var nodes = document.querySelectorAll(`#${id} ${element}`);
+  if(!nodes.length) return false;
+  return nodes[nodes.length-1];
 }
